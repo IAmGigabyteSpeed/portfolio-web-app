@@ -89,6 +89,10 @@ button {
   border-left: 2px solid rgba(115, 115, 115, 0.4);
 }
 
+.article > p {
+  margin-bottom: 1rem;
+}
+
 .article > p > img {
   width: 50%;
   height: 50%;

@@ -58,11 +58,11 @@ export default function About() {
                   Design and Motion Design. Other than that, to whomever is
                   reading this i hope you have a nice day!
                 </p>
-                <h2 className="pt-5 pb-1 text-center md:text-start">
+                <h2 className="pt-5 pb-1 text-center md:text-start animate-[slideDownFadeIn_0.7s_ease-in-out]">
                   Press this button to know more about me!
                 </h2>
                 <motion.div
-                  className="lg:w-1/4 w-3/4 flex items-center"
+                  className="lg:w-1/4 w-3/4 flex items-center animate-[slideDownFadeIn_0.7s_ease-in-out]"
                   animate={{ scale: [1.0, 1.025, 1.0] }}
                   transition={{
                     ease: "easeInOut",

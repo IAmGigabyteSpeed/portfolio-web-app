@@ -12,6 +12,9 @@ export default function Projects() {
     "project/ForumChat4.png",
     "project/ForumChat5.png",
     "project/ForumChat6.png",
+    "project/ForumChat7.png",
+    "project/ForumChat8.png",
+    "project/ForumChat9.png",
   ];
 
   let web2data = [
@@ -156,9 +159,9 @@ export default function Projects() {
             }
           />
 
-          <div className="pb-5 mt-10 flex justify-center items-center">
-            <p className=" md:text-2xl text-center px-2">
-              Anything interesting? You can view my complete works{" "}
+          <div className="pb-5 mt-20 flex justify-center items-center">
+            <p className=" md:text-xl text-center px-2">
+              Found anything interesting? You can view my complete works{" "}
               <span className="text-[#B1C29E] hover:text-[#808d72] underline">
                 <Link
                   href={`https://drive.google.com/drive/folders/1nst1lwDkvXR4YPi44RPlECCZRAi6Zssk?usp=drive_link`}

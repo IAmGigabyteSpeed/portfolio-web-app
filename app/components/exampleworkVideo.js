@@ -15,7 +15,7 @@ const ExampleWorkVideo = ({ videos, year, type, title, description }) => {
   };
 
   return (
-    <div className="mb-4">
+    <div className="mb-20 md:px-10">
       <Box
         sx={{
           display: "flex",

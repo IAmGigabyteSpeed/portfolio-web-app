@@ -16,6 +16,9 @@ export default function Skillcard({ skills }) {
               scale: 1.15,
             }}
             transition={{ type: "spring", stiffness: 200, damping: 25 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <Card className="hover:bg-slate-100 hover:shadow-lg transition duration-500 p-1">
               <CardContent className="flex justify-center items-center min-h-[12.5rem]">

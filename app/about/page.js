@@ -48,20 +48,37 @@ export default function About() {
                   ABOUT ME
                 </h1>
                 <p className="text-justify md:text-start mt-5 animate-[slideDownFadeIn_0.7s_ease-in-out]">
-                  Final year computer science student from Bina Nusantara
-                  University with 1 year of hands-on experience in full-stack
-                  web development.
+                  I am a final-year computer science student from Bina Nusantara
+                  University. I consider myself as a detail-oriented individual
+                  with a strong eagerness to learn and continuously refine my
+                  expertises. Currently, i am focused on broadening my expertise
+                  in full stack web development particularly in Next.js, React
+                  Native, Node.js and the .NET Core framework.Beyond that, i
+                  also have a passion for design with some background in Graphic
+                  Design and Motion Design. Other than that, to whomever is
+                  reading this i hope you have a nice day!
                 </p>
-                <h2 className="pt-10 pb-3 text-center md:text-start">
-                  You can view some of my works!
+                <h2 className="pt-5 pb-1 text-center md:text-start">
+                  Press this button to know more about me!
                 </h2>
-                <Button
-                  variant="contained"
+                <motion.div
                   className="lg:w-1/4 w-3/4 flex items-center"
-                  href="/projects"
+                  animate={{ scale: [1.0, 1.025, 1.0] }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: 1.2,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                  }}
                 >
-                  Check it out!
-                </Button>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    onClick={scrollToNextSection}
+                  >
+                    Check it out!
+                  </Button>
+                </motion.div>
               </div>
 
               <div className="md:w-1/2 w-full flex flex-col items-center justify-center"></div>

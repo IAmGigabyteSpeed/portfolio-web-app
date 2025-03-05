@@ -12,7 +12,10 @@ export default function Skillcard({ skills }) {
               scale: 1.05,
               boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
             }}
-            transition={{ type: "spring", stiffness: 200, damping: 10 }}
+            whileTap={{
+              scale: 1.15,
+            }}
+            transition={{ type: "spring", stiffness: 200, damping: 25 }}
           >
             <Card className="hover:bg-slate-100 hover:shadow-lg transition duration-500 p-1">
               <CardContent className="flex justify-center items-center min-h-[12.5rem]">

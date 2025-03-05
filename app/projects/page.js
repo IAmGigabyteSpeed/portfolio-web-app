@@ -61,6 +61,9 @@ export default function Projects() {
             year={2025}
             type={"Website Development (Next.js, Jikan API)"}
             title={"Anime Search"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit nunc sit amet pellentesque lobortis. Curabitur at turpis tempus, bibendum nulla a, suscipit mi. Suspendisse lacinia a massa in dignissim. Etiam a nibh lacus. Quisque eget diam et quam egestas egestas eu non est. Praesent quam ex, eleifend nec libero in, varius mattis quam. Praesent placerat arcu vel gravida ultrices."
+            }
           />
           <ExampleWork
             imgArr={web2data}
@@ -69,30 +72,45 @@ export default function Projects() {
               "Mobile Development (React Native, Typescript, Studio Ghibli API)"
             }
             title={"Studio Ghibli Fan Wiki"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit nunc sit amet pellentesque lobortis. Curabitur at turpis tempus, bibendum nulla a, suscipit mi. Suspendisse lacinia a massa in dignissim. Etiam a nibh lacus. Quisque eget diam et quam egestas egestas eu non est. Praesent quam ex, eleifend nec libero in, varius mattis quam. Praesent placerat arcu vel gravida ultrices."
+            }
           />
           <ExampleWorkVideo
             videos={web3data}
             year={2025}
             type={"Website Development (Live2D.js, jQuery, Gemini AI)"}
             title={"AI Chatbot App"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit nunc sit amet pellentesque lobortis. Curabitur at turpis tempus, bibendum nulla a, suscipit mi. Suspendisse lacinia a massa in dignissim. Etiam a nibh lacus. Quisque eget diam et quam egestas egestas eu non est. Praesent quam ex, eleifend nec libero in, varius mattis quam. Praesent placerat arcu vel gravida ultrices."
+            }
           />
           <ExampleWork
             imgArr={web4data}
             year={"2024-2025"}
             type={"Website Development (jQuery, .NET Core)"}
             title={"Internship Project"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit nunc sit amet pellentesque lobortis. Curabitur at turpis tempus, bibendum nulla a, suscipit mi. Suspendisse lacinia a massa in dignissim. Etiam a nibh lacus. Quisque eget diam et quam egestas egestas eu non est. Praesent quam ex, eleifend nec libero in, varius mattis quam. Praesent placerat arcu vel gravida ultrices."
+            }
           />
           <ExampleWork
             imgArr={web5data}
             year={"2024"}
             type={"Website Development (jQuery, .NET Core)"}
             title={"Basic CRUD Website"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit nunc sit amet pellentesque lobortis. Curabitur at turpis tempus, bibendum nulla a, suscipit mi. Suspendisse lacinia a massa in dignissim. Etiam a nibh lacus. Quisque eget diam et quam egestas egestas eu non est. Praesent quam ex, eleifend nec libero in, varius mattis quam. Praesent placerat arcu vel gravida ultrices."
+            }
           />
           <ExampleWork
             imgArr={web6data}
             year={"2018-2025"}
             type={"Graphic Design"}
             title={"Personal Projects"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit nunc sit amet pellentesque lobortis. Curabitur at turpis tempus, bibendum nulla a, suscipit mi. Suspendisse lacinia a massa in dignissim. Etiam a nibh lacus. Quisque eget diam et quam egestas egestas eu non est. Praesent quam ex, eleifend nec libero in, varius mattis quam. Praesent placerat arcu vel gravida ultrices."
+            }
           />
 
           <div className="pb-5 mt-10 flex justify-center items-center">

@@ -7,7 +7,7 @@ import { useRef } from "react";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Skillcard from "../components/skillscard";
 import ExperienceBox from "../components/experiencebox";
-import CerificationGrid from "../components/certificationgrid";
+import AchievementsGrid from "../components/achievementgrid";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -170,7 +170,7 @@ export default function About() {
         <section className="">
           <section className="px-2 md:px-20 pt-12">
             <p className="text-3xl text-center md:text-6xl md:text-start font-bold mb-5">
-              Certifications
+              Achievements
             </p>
           </section>
           <section className="mb-10">
@@ -181,38 +181,16 @@ export default function About() {
               transition={{ duration: 0.5 }}
               className="flex flex-col items-center align-center mb-10 gap-5"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                <CerificationGrid
-                  certificate={"sql"}
-                  award={"SQL (Basic)"}
-                  organizer={"hackerrank"}
-                />
-                <CerificationGrid
-                  certificate={"sql"}
-                  award={"SQL (Basic)"}
-                  organizer={"hackerrank"}
-                />
-                <CerificationGrid
-                  certificate={"sql"}
-                  award={"SQL (Basic)"}
-                  organizer={"hackerrank"}
-                />
-                <CerificationGrid
-                  certificate={"sql"}
-                  award={"SQL (Basic)"}
-                  organizer={"hackerrank"}
-                />
-                <CerificationGrid
-                  certificate={"sql"}
-                  award={"SQL (Basic)"}
-                  organizer={"hackerrank"}
-                />
-                <CerificationGrid
-                  certificate={"sql"}
-                  award={"SQL (Basic)"}
-                  organizer={"hackerrank"}
-                />
-              </div>
+              <AchievementsGrid
+                name={"Conference Presenter & Author"}
+                title={
+                  "Method For Traffic Violation Detection Using Deep Learning"
+                }
+                organizer={
+                  "2023 International Conference on Informatics, Multimedia, Cyber and Informations System (ICIMCIS)"
+                }
+                link={"https://ieeexplore.ieee.org/abstract/document/10349009"}
+              />
             </motion.div>
           </section>
         </section>

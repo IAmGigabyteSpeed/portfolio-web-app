@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FCE7C8;
+  --foreground: #754E1A;
+  --accent: #5C3C10;
+}
+
+.dark-mode {
+  --background: #754E1A;
+  --foreground: #FCE7C8;
+  --accent: #A6794D;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--background);
+  padding: 0.5rem 0.75rem;
+  margin: 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button-color{
+  background-color: var(--accent);
+  color: var(--background);
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.025em;
+  margin-bottom: 5rem;
+}
+
+.article > h1 {
+  font-size: 2.25rem;
+  text-align: center;
+  letter-spacing: -0.015em;
+}
+
+.article > h2 {
+  font-size: 1.875rem;
+  text-align: center;
+  letter-spacing: -0.015em;
+}
+
+.article > ol {
+  list-style-type: decimal;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  gap: 0.5rem;
+}
+
+.article > ul {
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  gap: 0.5rem;
+}
+
+.article > pre {
+  background-color: #171717;
+  color: #fafafa;
+  padding: 1.25rem;
+  overflow: scroll;
+}
+
+.article > blockquote {
+  padding-left: 1.25rem;
+  font-style: italic;
+  border-left: 2px solid rgba(115, 115, 115, 0.4);
+}
+
+.article > p > img {
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.article > p > a {
+  text-decoration: underline;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.slider-container {
+  display: inline-block;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+.animate-waving-hand {
+  display: inline-block;
+  animation: wave 1s infinite ease-in-out;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-jumping-hand {
+  display: inline-block;
+  animation: jump 1s infinite ease-in-out;
+}
+
+@keyframes updownjump {
+  0%, 100% {
+    transform: translateY(-1.25px);
+  }
+  50% {
+    transform: translateY(1.25px);
+  }
+}
+
+.animate-arrow {
+  display: inline-block;
+  animation: updownjump 1s infinite ease-in-out;
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownFadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

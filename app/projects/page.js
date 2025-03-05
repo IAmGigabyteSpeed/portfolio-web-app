@@ -101,7 +101,7 @@ export default function Projects() {
             type={"Website Development"}
             title={"Anime Search"}
             description={
-              "This section includes a web application created using Next.js and provides information regarding animes from MyAnimeList. This website uses Jikan API for its data and also incorporated Pagination, Search and Filtering using React Query"
+              "This section includes a web application created using Next.js and provides information regarding animes from MyAnimeList. This website uses Jikan API for its data and also incorporated Pagination, Search and Filtering using React Query."
             }
           />
           <ExampleWork
@@ -128,7 +128,7 @@ export default function Projects() {
             type={"Website Development"}
             title={"Internship Project"}
             description={
-              "This section includes web application projects i've done during my internship at PT.Bintang Toedjoe and includes several project i've done. All of the web applications was made using jQuery as the front-end, .Net Core 6 as the back-end and MS SQL as the database.."
+              "This section includes web application projects i've done during my internship at PT.Bintang Toedjoe and includes several project i've done. All of the web applications was made using jQuery as the front-end, .Net Core 6 as the back-end and MS SQL as the database."
             }
           />
           <ExampleWork
@@ -155,7 +155,7 @@ export default function Projects() {
             type={"Graphic Design"}
             title={"Personal Projects"}
             description={
-              "This sections includes several graphic designs that i've done personally. Some of them includes several poster competitions i've participated in, high school projects and personal projects. Most were made using Photoshop or Canva."
+              "This sections includes several graphic designs that i've done personally. Some of them includes several poster competitions i've participated in, high school projects and personal projects. Most of them were made using tools such as Photoshop and Canva."
             }
           />
 
@@ -166,6 +166,7 @@ export default function Projects() {
                 <Link
                   href={`https://drive.google.com/drive/folders/1nst1lwDkvXR4YPi44RPlECCZRAi6Zssk?usp=drive_link`}
                   passHref
+                  target="_blank"
                 >
                   here
                 </Link>

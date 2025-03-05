@@ -8,7 +8,7 @@ export default function AchievementsGrid({ name, title, organizer, link }) {
         <p className="text-xl text-emerald-500">{name}</p>
         <p>{title}</p>
         <p className="text-gray-500">{organizer}</p>
-        <Link className="text-blue-500" href={link}>
+        <Link className="text-blue-500" href={link} passHref target="_blank">
           Link to Paper
         </Link>
       </CardContent>

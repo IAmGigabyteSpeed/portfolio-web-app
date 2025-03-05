@@ -62,7 +62,7 @@ export default function About() {
                   Press this button to know more about me!
                 </h2>
                 <motion.div
-                  className="lg:w-1/4 w-3/4 flex items-center animate-[slideDownFadeIn_0.7s_ease-in-out]"
+                  className="lg:w-1/4 w-3/4 flex justify-center lg:justify-start items-center animate-[slideDownFadeIn_0.7s_ease-in-out]"
                   animate={{ scale: [1.0, 1.025, 1.0] }}
                   transition={{
                     ease: "easeInOut",
@@ -81,7 +81,21 @@ export default function About() {
                 </motion.div>
               </div>
 
-              <div className="md:w-1/2 w-full flex flex-col items-center justify-center"></div>
+              <div className="md:w-1/2 w-full ">
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.75 }}
+                  className="flex flex-col items-center justify-center"
+                >
+                  <img
+                    alt="image"
+                    className="h-3/5 w-3/5"
+                    src="/assets/icon.webp"
+                  />
+                </motion.div>
+              </div>
             </div>
           </div>
           <div
@@ -214,7 +228,7 @@ export default function About() {
         <section className="mt-16 mb-10">
           <p className="text-2xl text-center">
             That&apos;s the end of the road! You can get to know me better{" "}
-            <Link href={"/contact"}>
+            <Link href={"/contact"} passHref>
               <span className="text-blue-500">here!</span>
             </Link>
           </p>

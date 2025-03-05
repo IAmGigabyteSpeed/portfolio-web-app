@@ -1,12 +1,12 @@
 ---
-title: "3 albums i wished people listented to pt.1"
+title: "5 albums that are not talked about enough pt.1"
 category: "Music"
 date: "26-02-2025"
 cover: "/assets/SophtwareSlump.webp"
 summary: "This blog focuses on showing 3 albums that are in my opinion underrated"
 ---
 
-# 3 albums i wished people listented to pt.1
+# 5 albums that are not talked about enough pt.1
 
 Welcome to one of my very first blogs in this website!
 
@@ -30,12 +30,12 @@ One of the most dreamy shoegaze albums i have ever listened to. The usage of rev
 One word for this album is "Experimental". The overall feel of this album is similar to a musical play with its storytelling and character conversation mixed within the songs. The story focuses on Caroline who starts feeling depressed and her friend Suzi attempts to help her understand it. The dynamic between Suzi and Caroline during HOW DOES IT FEEL was very interesting as if suzi was trying to lighten up the mood for Caroline to be able to express her feelings. The rest of the songs help guide Caroline through the confusion which leads to her understanding her emotions and lets her feelings out during NOW THAT YOU'VE GONE and finally moves on with her life joining her old friend Sun in SOME DAY, THAT PLACE IN TIME. The songs in this album feels very dreamy and nostalgic with a hint of jazz and lounge music similar to shibuya-kei. Since listening to this, i have never found any other albums that have this kind of uniqueness and it's definitely a one of a kind album.
 
 ## #4 In This World - susquatch
-![Art](/assets/DOOPEE.jpg)
+![Art](/assets/inthisworld.jpg)
 
 This is not your average japanese rock album. There is one huge twist that makes it truly stands out; It's sung with "japanglish". But the band somehow created one of the most catchy and captivating j-rock album that i have ever heard. The overall technicality of the guitarist and drummer in songs such as Ghost and summer end with their ability able to switch time signatures and tempos and the overall emotive delivery of the lyrics by the singer such as in after the thaw made it one of my favourite math rock albums. It's one of those albums that shows that lyrics is not always needed to carry the emotions the band was trying to potray in each song and it definitely won me over. Overall it's an amazing album that brings so much energy and passion to the table you can't help but be enamored by it.
 
 ## #5 Hellfire - black midi
-![Art](/assets/DOOPEE.jpg)
+![Art](/assets/hellfire.jpg)
 
 One look at the album cover and you'll start wondering what kind of album this would be (and yes it's avant-garde). black midi has been one of those artists that's always trying to do something experimental or at least something different from each album they release. This is one of them and it brings the vibe of a jazzy opera play with its sometimes dramatic use of instruments that help guide the listeners to each song's story and expression. Songs such as Sugar/Tzu definitely fits the bill with having one of the most chaotic jazz fusion instrumental and songs such as The Defence having a captivating instrumental with beautiful singing and some of the most unsettling lyrics. The overall feeling you get while listening to this album is that of amazement at the captivating instrumentals or disgust at the depraved lyrics. Not an album for everyone with it's often dark and heavy themes but it definitely intrigued me enough to talk about them here.
 

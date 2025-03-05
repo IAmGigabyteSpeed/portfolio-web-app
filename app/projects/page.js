@@ -86,6 +86,9 @@ export default function Projects() {
           <p className="text-3xl text-center md:text-6xl md:text-start font-bold">
             Example Works
           </p>
+          <p className="text-sm md:text-lg text-center md:text-start">
+            Here are some of my works i&apos;ve done in the past!
+          </p>
           <ExampleWork
             imgArr={web1data}
             year={2025}

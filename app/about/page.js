@@ -44,7 +44,7 @@ export default function About() {
           <div className="min-h-[96vh] flex items-center">
             <div className="flex flex-col md:flex-row items-center justify-center w-full px-10 gap-10 pt-12">
               <div className="md:w-1/2 w-full flex flex-col justify-center items-center md:items-start">
-                <h1 className="text-4xl text-center md:text-start font-bold animate-[FadeIn_0.7s_ease-in-out]">
+                <h1 className="text-7xl mt-5 md:mt-0 text-center md:text-start font-bold animate-[FadeIn_0.7s_ease-in-out]">
                   ABOUT ME
                 </h1>
                 <p className="text-justify md:text-start mt-5 animate-[slideDownFadeIn_0.7s_ease-in-out]">

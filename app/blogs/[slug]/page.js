@@ -32,7 +32,7 @@ const Blog = () => {
         ) : error ? (
           <p>Error: {error.message}</p>
         ) : (
-          <section className="mx-auto w-11/12 pt-20 flex flex-col gap-5">
+          <section className="mx-auto w-11/12 md:w-8/12 pt-20 flex flex-col gap-5">
             <div className="flex justify-between font-poppins place-items-center">
               <Link
                 href="/blog"
@@ -43,7 +43,7 @@ const Blog = () => {
               <p className="">{blog.date.toString()}</p>
             </div>
             <article
-              className="article lg:px-20"
+              className="article lg:px-20 text-justify"
               dangerouslySetInnerHTML={{ __html: blog.contentHtml }}
             ></article>
           </section>

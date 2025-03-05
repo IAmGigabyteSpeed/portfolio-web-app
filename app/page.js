@@ -1,3 +1,4 @@
+import Link from "next/link";
 import FollowCursor from "./components/cursor";
 import Nav from "./components/nav";
 
@@ -25,7 +26,7 @@ export default function Home() {
             </span>
           </h1>
         </div>
-        <div className="h-screen flex items-center justify-center bg-[#FCE7C8] snap-start">
+        <div className="h-screen flex flex-col items-center justify-center bg-[#FCE7C8] snap-start">
           <h1 className="text-emerald-500 text-center text-3xl md:text-6xl">
             Thanks for stopping by!{" "}
             <span className="inline-flex whitespace-nowrap">
@@ -33,6 +34,11 @@ export default function Home() {
               •⩊• )
             </span>
           </h1>
+          <Link className="pt-5" href={"/about"}>
+            <p className="text-lg text-[#B1C29E] hover:text-[#a1c479]">
+              You can start from Here!
+            </p>
+          </Link>
         </div>
       </div>
     </>

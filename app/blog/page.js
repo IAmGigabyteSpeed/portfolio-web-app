@@ -5,6 +5,7 @@ import { Card, CardContent } from "@mui/material";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useRef, useEffect, useState } from "react";
 import useDebounce from "@/libs/useDebounce";
+import { motion } from "framer-motion";
 
 const fetchBlogs = async ({ pageParam = 1, search, category }) => {
   const res = await fetch(
@@ -96,39 +97,45 @@ export default function Blogs() {
           <div className="grid grid-cols-1 gap-5 mx-5 md:mx-20 mt-5">
             {data?.pages.map((page) =>
               page.blogs.map((blog) => (
-                <Card
+                <motion.div
+                  initial={{ opacity: 0, x: 25 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.75 }}
+                  className=""
                   key={blog.id}
-                  className="shadow-md hover:shadow-lg transition-shadow duration-300 rounded-xl"
                 >
-                  <CardContent className="rounded-xl">
-                    <Link href={`/blogs/${blog.id}`} passHref>
-                      <div className="flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center">
-                        <div className="md:me-5">
-                          <img
-                            alt="Cover"
-                            src={blog.cover || "/default-cover.jpg"}
-                            className="rounded w-[300px] h-[225px]"
-                          />
-                        </div>
-                        <div>
-                          <div className="cursor-pointer">
-                            <h2 className="text-lg font-semibold text-blue-500 hover:underline">
-                              {blog.title}
-                            </h2>
-                            <p className="text-gray-500 text-sm text-center md:text-start">
-                              {blog.date}
-                            </p>
+                  <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 rounded-xl">
+                    <CardContent className="rounded-xl">
+                      <Link href={`/blogs/${blog.id}`} passHref>
+                        <div className="flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center">
+                          <div className="md:me-5">
+                            <img
+                              alt="Cover"
+                              src={blog.cover || "/default-cover.jpg"}
+                              className="rounded w-[300px] h-[225px]"
+                            />
                           </div>
                           <div>
-                            <p className="text-gray-500 text-sm text-center md:text-start">
-                              {blog.summary}
-                            </p>
+                            <div className="cursor-pointer">
+                              <h2 className="text-lg font-semibold text-blue-500 hover:underline">
+                                {blog.title}
+                              </h2>
+                              <p className="text-gray-500 text-sm text-center md:text-start">
+                                {blog.date}
+                              </p>
+                            </div>
+                            <div>
+                              <p className="text-gray-500 text-sm text-center md:text-start">
+                                {blog.summary}
+                              </p>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </Link>
-                  </CardContent>
-                </Card>
+                      </Link>
+                    </CardContent>
+                  </Card>
+                </motion.div>
               ))
             )}
           </div>

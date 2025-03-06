@@ -18,7 +18,7 @@ const Contact = () => {
           <h1 className="text-2xl md:text-3xl lg:text-5xl my-10 font-bold">
             Let&apos;s Connect!
           </h1>
-          <div className="flex md:flex-row flex-col md:space-x-5 md:space-y-0 space-y-5">
+          <div className="flex lg:flex-row flex-col lg:space-x-5 lg:space-y-0 space-y-5">
             <Link
               target="_blank"
               href={`mailto:darren.tangamus@gmail.com`}

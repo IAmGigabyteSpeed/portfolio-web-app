@@ -89,9 +89,11 @@ export default function Blogs() {
           </select>
         </div>
         {isLoading ? (
-          <p>Loading Blogs...</p>
+          <p className="text-center w-screen">Loading Blogs...</p>
         ) : error ? (
-          <p>Error loading Blogs: {error.message}</p>
+          <p className="text-center w-screen">
+            Error loading Blogs: {error.message}
+          </p>
         ) : (
           <div className="grid grid-cols-1 gap-5 mx-5 md:mx-20 mt-5">
             {data?.pages.map((page) =>

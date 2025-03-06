@@ -105,9 +105,9 @@ export default function Blogs() {
                       <div className="flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center">
                         <div className="md:me-5">
                           <img
-                            alt="Cover"
+                            alt="Cover Image"
                             src={blog.cover || "/default-cover.jpg"}
-                            className="rounded w-[300px] h-[225px]"
+                            className="rounded w-[250px] h-[225px] min-w-[250px] min-h-[225px] object-cover"
                           />
                         </div>
                         <div>

@@ -30,8 +30,8 @@ export default function About() {
     "office",
     "figma",
     "canva",
-    "ps",
-    "ae",
+    "Ps",
+    "Ae",
     "capcut",
   ];
 

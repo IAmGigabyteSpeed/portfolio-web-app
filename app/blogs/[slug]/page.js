@@ -28,9 +28,9 @@ const Blog = () => {
       <Nav />
       <div className=" min-h-screen">
         {isLoading ? (
-          <p>Loading...</p>
+          <p className="text-center w-screen">Loading...</p>
         ) : error ? (
-          <p>Error: {error.message}</p>
+          <p className="text-cenver w-screen">Error: {error.message}</p>
         ) : (
           <section className="mx-auto w-11/12 md:w-8/12 pt-20 flex flex-col gap-5">
             <div className="flex justify-between font-poppins place-items-center">

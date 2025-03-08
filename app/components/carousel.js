@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, Card, CardMedia, IconButton, Grid2 } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
+import { motion } from "framer-motion";
 
 const Carousel = ({ imgSrc }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -36,20 +37,28 @@ const Carousel = ({ imgSrc }) => {
           )
           .map((img, index) => (
             <Grid2 key={index} sx={{ flex: 1 }}>
-              <Card
-                sx={{ borderRadius: 2, overflow: "hidden", height: "100%" }}
+              <motion.div
+                whileHover={{
+                  scale: 1.01,
+                  boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
+                }}
+                transition={{ type: "spring", stiffness: 200, damping: 25 }}
               >
-                <CardMedia
-                  component="img"
-                  sx={{
-                    width: "100%",
-                    height: { xs: 200, sm: 300, md: 500, lg: 650 }, // Fixed height with responsiveness
-                    objectFit: "contain",
-                  }}
-                  image={img}
-                  alt={`Slide ${index + 1}`}
-                />
-              </Card>
+                <Card
+                  sx={{ borderRadius: 2, overflow: "hidden", height: "100%" }}
+                >
+                  <CardMedia
+                    component="img"
+                    sx={{
+                      width: "100%",
+                      height: { xs: 200, sm: 300, md: 500, lg: 650 }, // Fixed height with responsiveness
+                      objectFit: "contain",
+                    }}
+                    image={img}
+                    alt={`Slide ${index + 1}`}
+                  />
+                </Card>
+              </motion.div>
             </Grid2>
           ))}
       </Grid2>

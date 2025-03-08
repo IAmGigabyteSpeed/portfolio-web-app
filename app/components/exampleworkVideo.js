@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Box, Card, CardMedia, Grid2, IconButton } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
+import { motion } from "framer-motion";
 const ExampleWorkVideo = ({ videos, year, type, title, description }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const itemsPerSlide = 1;
@@ -34,23 +35,31 @@ const ExampleWorkVideo = ({ videos, year, type, title, description }) => {
               activeIndex * itemsPerSlide + itemsPerSlide
             )
             .map((video, index) => (
-              <Grid2 key={video} sx={{ flex: 1 }}>
-                <Card
-                  sx={{ borderRadius: 2, overflow: "hidden", height: "100%" }}
+              <Grid2 key={index} sx={{ flex: 1 }}>
+                <motion.div
+                  whileHover={{
+                    scale: 1.01,
+                    boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
+                  }}
+                  transition={{ type: "spring", stiffness: 200, damping: 25 }}
                 >
-                  <CardMedia
-                    component="video"
-                    sx={{
-                      width: "100%",
-                      height: { xs: 200, sm: 300, md: 500, lg: 650 }, // Fixed height with responsiveness
-                      objectFit: "contain",
-                    }}
-                    image={video}
-                    controls
-                    muted
-                    alt={`Video`}
-                  />
-                </Card>
+                  <Card
+                    sx={{ borderRadius: 2, overflow: "hidden", height: "100%" }}
+                  >
+                    <CardMedia
+                      component="video"
+                      sx={{
+                        width: "100%",
+                        height: { xs: 200, sm: 300, md: 500, lg: 650 }, // Fixed height with responsiveness
+                        objectFit: "contain",
+                      }}
+                      image={video}
+                      controls
+                      muted
+                      alt={`Video`}
+                    />
+                  </Card>
+                </motion.div>
               </Grid2>
             ))}
         </Grid2>

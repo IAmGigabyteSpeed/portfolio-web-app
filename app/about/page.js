@@ -53,10 +53,10 @@ export default function About() {
                   with a strong eagerness to learn and continuously refine my
                   expertises. Currently, i am focused on broadening my expertise
                   in full stack web development particularly in Next.js, React
-                  Native, Node.js and the .NET Core framework.Beyond that, i
+                  Native, Node.js and the .NET Core framework. Beyond that, i
                   also have a passion for design with some background in Graphic
-                  Design and Motion Design. Other than that, to whomever is
-                  reading this i hope you have a nice day!
+                  Design and Motion Design. Lastly, to whomever is reading this
+                  i hope you have a nice day!
                 </p>
                 <h2 className="pt-5 pb-1 text-center md:text-start animate-[slideDownFadeIn_0.7s_ease-in-out]">
                   Press this button to know more about me!
@@ -133,11 +133,19 @@ export default function About() {
                 }
               />
               <ExperienceBox
-                title={"Bunda Mulia E-Sports Competition"}
+                title={"Nippon Club"}
+                year={"September 2023 - October 2023"}
+                position={"Event Committee"}
+                jobdescription={
+                  "- Collaborate with a team of 8 people as the equipment and consumption division for the Nippon Club Welcoming Party 2023 \n- Assisted in on-site registrations, verifications and inquiries during the event"
+                }
+              />
+              <ExperienceBox
+                title={"SMA Bunda Mulia"}
                 year={"June 2019 - September 2019"}
                 position={"Event Committee"}
                 jobdescription={
-                  "- Design promotional poster and waiting screen during the event\n- Prepare the video broadcasting system for the event\n- Arrange softwares and gaming equipments for tournament participants"
+                  "- Design promotional poster and waiting screens for Bunda Mulia E-Sports Competition \n- Collaborate with 1 staff to setup the video broadcasting system for the event\n- Arrange softwares and gaming equipments for tournament participants"
                 }
               />
             </motion.div>

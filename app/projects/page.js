@@ -70,8 +70,8 @@ export default function Projects() {
   ];
 
   let web8data = [
-    "project/Personal1.png",
     "project/Personal2.png",
+    "project/Personal1.png",
     "project/Personal3.png",
     "project/Personal4.png",
     "project/Personal5.png",

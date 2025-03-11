@@ -3,7 +3,7 @@ title: "5 albums that are not talked about enough pt.1"
 category: "Music"
 date: "26-02-2025"
 cover: "/assets/SophtwareSlump.webp"
-summary: "This blog focuses on showing 3 albums that are in my opinion underrated"
+summary: "This blog focuses on showing 5 albums that are in my opinion underrated"
 ---
 
 # 5 albums that are not talked about enough pt.1

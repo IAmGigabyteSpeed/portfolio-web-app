@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Skillcard({ skills }) {
   return (
-    <Grid container spacing={4} justifyContent="center" alignItems="center">
+    <Grid container spacing={5} justifyContent="center" alignItems="center">
       {skills.map((skill) => (
         <Grid xs={4} sm={3} md={2} lg={1.5} key={skill}>
           <motion.div
@@ -19,11 +19,12 @@ export default function Skillcard({ skills }) {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
+            className=""
           >
             <Card className="hover:bg-slate-100 hover:shadow-lg transition duration-500 p-1">
-              <CardContent className="flex justify-center items-center min-h-[12.5rem]">
+              <CardContent className="flex justify-center items-center min-h-[9rem]">
                 <img
-                  className="w-2/5 h-1/2"
+                  className="w-1/3 h-1/2"
                   alt={skill}
                   src={`/skills/${skill}.webp`}
                 />

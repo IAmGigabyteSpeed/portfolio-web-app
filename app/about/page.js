@@ -22,17 +22,22 @@ export default function About() {
     "net",
     "boot",
     "mssql",
-    "notion",
+    "Postgres",
     "jquery",
     "node",
     "tailwind",
     "mysql",
-    "office",
+    "MongoDB",
+    "Expo",
+    "Redux",
+    "Insomnia",
+    "Jest",
+    "Docker",
+    "Git",
     "figma",
     "canva",
     "Ps",
     "Ae",
-    "capcut",
   ];
 
   return (
@@ -194,7 +199,7 @@ export default function About() {
               Skills
             </p>
           </section>
-          <section className="mb-10">
+          <section className="mb-5">
             <Skillcard skills={skills} />
           </section>
           <h2></h2>

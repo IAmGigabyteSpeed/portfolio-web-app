@@ -24,12 +24,16 @@ export default function Projects() {
     "project/AnimeSearch4.png",
     "project/AnimeSearch5.png",
   ];
+
   let web3data = [
-    "project/Ghibli1.png",
-    "project/Ghibli2.png",
-    "project/Ghibli3.png",
-    "project/Ghibli4.png",
-    "project/Ghibli5.png",
+    "project/StoreApp1.png",
+    "project/StoreApp2.png",
+    "project/StoreApp3.png",
+    "project/StoreApp4.png",
+    "project/StoreApp5.png",
+    "project/StoreApp6.png",
+    "project/StoreApp7.png",
+    "project/StoreApp8.png",
   ];
 
   let web4data = ["project/AIShowcase.webm"];
@@ -95,7 +99,7 @@ export default function Projects() {
             type={"Website Development (Next.js + .NET Core)"}
             title={"Forum Chat App"}
             description={
-              "This section shows a full stack web application that provides a forum website for people to have discussions of any topic they want.The website is created using Next.js as the front-end, .Net Core 8 as the backend and MS SQL as the database. It also incorporates JWT for Authentication, Redux for user state management and React Query for pagination, search, and filtering."
+              "This section shows a full stack web application that provides a forum website for people to have discussions of any topic they want.The website is created using Next.js as the front-end, .Net Core 8 as the backend and MS SQL as the database. It also incorporates JWT for user authentication, Redux for user state management and React Query for pagination, search, and filtering."
             }
           />
           <ExampleWork
@@ -110,12 +114,10 @@ export default function Projects() {
           <ExampleWork
             imgArr={web3data}
             year={2025}
-            type={
-              "Mobile Website Development (React Native + Studio Ghibli API)"
-            }
-            title={"Studio Ghibli Fan Wiki"}
+            type={"Mobile Development (React Native + Express.js)"}
+            title={"E-Store App"}
             description={
-              "This section shows a web application built with React Native and Typescript that provides a hub for everything related to Studio Ghibli Movies. The Website incorporates Studio Ghibli API for its data and also implements pagination and search."
+              "This section shows a web application built with React Native and Typescript that showcases a simple iteration of a e-commerce marketplace. The application uses Express.js as the backend with MongoDB as the database. It also incorporates JWT for user authentication and Redux for user's cart state management."
             }
           />
           <ExampleWorkVideo

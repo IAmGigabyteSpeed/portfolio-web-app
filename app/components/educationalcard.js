@@ -6,7 +6,7 @@ const EducationalCard = ({ title, year, grade, study }) => {
         <div className="flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center">
           <div className="md:me-5"></div>
           <div>
-            <div className="cursor-pointer">
+            <div className="">
               <h2 className="text-lg text-center md:text-start font-semibold text-emerald-500">
                 {title}
               </h2>

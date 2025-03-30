@@ -10,23 +10,25 @@ import ExperienceBox from "../components/experiencebox";
 import AchievementsGrid from "../components/achievementgrid";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import ScrolltoTop from "../components/scrolltoTop";
 
 export default function About() {
   const scrollRef = useRef(null);
+  const topRef = useRef(null);
   const scrollToNextSection = () => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   let skills = [
-    "next",
-    "net",
-    "boot",
-    "mssql",
+    "Nextjs",
+    "DotNET",
+    "Bootstrap",
+    "MsSQL",
     "Postgres",
-    "jquery",
-    "node",
-    "tailwind",
-    "mysql",
+    "jQuery",
+    "Express",
+    "Tailwind",
+    "MySQL",
     "MongoDB",
     "Expo",
     "Redux",
@@ -34,39 +36,45 @@ export default function About() {
     "Jest",
     "Docker",
     "Git",
-    "figma",
-    "canva",
-    "Ps",
-    "Ae",
+    "Figma",
+    "Canva",
+    "Photoshop",
+    "After Effects",
   ];
 
   return (
     <>
       <FollowCursor />
       <Nav />
-      <div className="h-screen overflow-y-scroll no-scrollbar">
-        <section className="min-h-screen">
+      <div className="lg:px-20">
+        <ScrolltoTop topRef={topRef} />
+        <section ref={topRef} className="min-h-screen">
           <div className="min-h-[96vh] flex items-center">
             <div className="flex flex-col md:flex-row items-center justify-center w-full px-10 gap-10 pt-12">
               <div className="md:w-1/2 w-full flex flex-col justify-center items-center md:items-start">
                 <h1 className="text-7xl mt-5 md:mt-0 text-center md:text-start font-bold animate-[FadeIn_0.7s_ease-in-out]">
                   ABOUT ME
                 </h1>
-                <p className="text-justify text-lg md:text-start mt-5 animate-[slideDownFadeIn_0.7s_ease-in-out]">
-                  Welcome! My name is Darren and i am a computer science
-                  student. I&apos;m currently focusing on improving my skills in
-                  web development hence te existence of this website.
+                <div className="lg:pe-40">
+                  <p className="text-justify mt-5 animate-[slideDownFadeIn_0.7s_ease-in-out]">
+                    Welcome! I&apos;m Darren, a computer science student focused
+                    on sharpening my web development skills. I have made several
+                    web applications using front-end frameworks such as Next.js,
+                    React Native, jQuery and back-end frameworks such as .NET
+                    Core and Express.js.
+                  </p>
+                  <p className="text-justify mt-5 animate-[slideDownFadeIn_0.7s_ease-in-out]">
+                    Other than that, i have a passion for design and have
+                    expressed my creativty through several outlets such as
+                    graphic design, motion design, web design and video editing.
+                    It&apos;s been a fun ride and i don&apos;t plan on stopping!
+                  </p>
+                </div>
+                <p className="text-justify mt-5 mb-2 animate-[slideDownFadeIn_0.7s_ease-in-out]">
+                  Let&apos;s continue on!
                 </p>
-                <p className="text-justify text-lg md:text-start mt-5 animate-[slideDownFadeIn_0.7s_ease-in-out]">
-                  Beyond that, i also have a passion for design with some
-                  background in Graphic Design and Motion Design. Lastly, to
-                  whomever is reading this i hope you have a nice day!
-                </p>
-                <h2 className="pt-5 pb-1 text-center md:text-start animate-[slideDownFadeIn_0.7s_ease-in-out]">
-                  Press this button to know more about me!
-                </h2>
                 <motion.div
-                  className="ms-1 lg:w-1/4 w-3/4 flex justify-center lg:justify-start items-center animate-[slideDownFadeIn_0.7s_ease-in-out]"
+                  className="lg:w-1/4 w-3/4 flex justify-center lg:justify-start items-center animate-[slideDownFadeIn_0.7s_ease-in-out]"
                   animate={{ scale: [1.0, 1.025, 1.0] }}
                   transition={{
                     ease: "easeInOut",
@@ -85,7 +93,7 @@ export default function About() {
                     }}
                     onClick={scrollToNextSection}
                   >
-                    Check it out!
+                    Press Me!
                   </Button>
                 </motion.div>
               </div>

@@ -4,7 +4,13 @@ import { motion } from "framer-motion";
 
 export default function Skillcard({ skills }) {
   return (
-    <Grid container spacing={5} justifyContent="center" alignItems="center">
+    <Grid
+      container
+      spacing={5}
+      justifyContent="center"
+      alignItems="center"
+      paddingX={6}
+    >
       {skills.map((skill) => (
         <Grid xs={4} sm={3} md={2} lg={1.5} key={skill}>
           <motion.div
@@ -28,6 +34,11 @@ export default function Skillcard({ skills }) {
                   alt={skill}
                   src={`/skills/${skill}.webp`}
                 />
+                <div className="absolute inset-0 bg-black bg-opacity-25 opacity-0 hover:opacity-100 flex justify-center items-end transition-opacity duration-300">
+                  <span className="text-white text-lg font-semibold">
+                    {skill}
+                  </span>
+                </div>
               </CardContent>
             </Card>
           </motion.div>

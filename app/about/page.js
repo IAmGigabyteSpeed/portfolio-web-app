@@ -89,7 +89,7 @@ export default function About() {
                     size="small"
                     sx={{
                       backgroundColor: "var(--accent)",
-                      color: "var(--background)",
+                      color: "#F5F5F5",
                     }}
                     onClick={scrollToNextSection}
                   >
@@ -101,7 +101,7 @@ export default function About() {
               <div className="md:w-1/2 w-full flex flex-col items-center justify-center">
                 <img
                   alt="image"
-                  className="h-3/5 w-3/5 animate-[slideRightFadeIn_0.7s_ease-in-out]"
+                  className="h-3/4 w-3/4 animate-[slideRightFadeIn_0.7s_ease-in-out]"
                   src="/assets/programmer.webp"
                 />
               </div>

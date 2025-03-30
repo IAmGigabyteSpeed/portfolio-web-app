@@ -23,7 +23,7 @@ export default function ScrollToTop({ topRef }) {
   return (
     <button
       onClick={sendTop}
-      className={` fixed text-center bottom-3 right-3 z-10 p-4 bg-[var-accent] text-white rounded-full shadow-lg transition-opacity duration-300 ${
+      className={`fixed text-center bottom-3 right-3 z-10 p-4 bg-[var-accent] text-white rounded-full shadow-lg transition-opacity duration-300 ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
 import { motion } from "framer-motion";
 
-export default function ScrollToTop({ ref }) {
+export default function ScrollToTop({ topRef }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function ScrollToTop({ ref }) {
   }, []);
 
   const sendTop = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+    topRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (

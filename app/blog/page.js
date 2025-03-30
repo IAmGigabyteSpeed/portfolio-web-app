@@ -68,7 +68,7 @@ export default function Blogs() {
   return (
     <div>
       <Nav />
-      <div className="pt-12 min-h-screen">
+      <div className="pt-12 min-h-screen lg:px-20">
         <div className="my-4 flex flex-row items-center justify-end me-5 md:mx-20">
           <input
             type="text"

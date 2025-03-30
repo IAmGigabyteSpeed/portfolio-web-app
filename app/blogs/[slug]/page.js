@@ -26,7 +26,7 @@ const Blog = () => {
   return (
     <>
       <Nav />
-      <div className=" min-h-screen">
+      <div className="min-h-screen lg:px-20">
         {isLoading ? (
           <p className="text-center w-screen">Loading...</p>
         ) : error ? (

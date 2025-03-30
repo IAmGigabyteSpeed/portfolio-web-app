@@ -85,13 +85,13 @@ export default function Projects() {
     <>
       <FollowCursor />
       <Nav />
-      <div className="pt-12 min-h-screen">
+      <div className="pt-12 min-h-screen lg:px-20">
         <section className="min-h-screen px-2 md:px-12 lg:px-24 pt-12">
           <p className="text-3xl text-center md:text-6xl md:text-start font-bold">
             Example Works
           </p>
           <p className="text-sm md:text-lg text-center md:text-start">
-            Here are some of my works i&apos;ve done in the past!
+            Here are some of my works that i&apos;ve done in the past!
           </p>
           <ExampleWork
             imgArr={web1data}

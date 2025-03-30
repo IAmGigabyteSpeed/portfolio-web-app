@@ -16,7 +16,7 @@ const ExampleWorkVideo = ({ videos, year, type, title, description }) => {
   };
 
   return (
-    <div className="mb-20 md:px-10 animate-[slideDownFadeIn_0.7s_ease-in-out]">
+    <div className="mb-20 md:px-10 lg:px-28 animate-[slideDownFadeIn_0.7s_ease-in-out]">
       <Box
         sx={{
           display: "flex",

@@ -1,7 +1,7 @@
 import Carousel from "./carousel";
 const ExampleWork = ({ imgArr, year, type, title, description }) => {
   return (
-    <div className="mb-20 md:px-10 animate-[slideDownFadeIn_0.7s_ease-in-out]">
+    <div className="mb-20 md:px-10 lg:px-28 animate-[slideDownFadeIn_0.7s_ease-in-out]">
       <Carousel imgSrc={imgArr} />
       <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start md:mx-10 mt-5">
         <div className="md:w-1/2 flex me-1">

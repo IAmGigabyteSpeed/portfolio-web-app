@@ -52,16 +52,15 @@ export default function About() {
                 <h1 className="text-7xl mt-5 md:mt-0 text-center md:text-start font-bold animate-[FadeIn_0.7s_ease-in-out]">
                   ABOUT ME
                 </h1>
-                <p className="text-justify md:text-start mt-5 animate-[slideDownFadeIn_0.7s_ease-in-out]">
-                  I am a final-year computer science student from Bina Nusantara
-                  University. I consider myself as a detail-oriented individual
-                  with a strong eagerness to learn and continuously refine my
-                  expertises. Currently, i am focused on broadening my expertise
-                  in full stack web development particularly in Next.js, React
-                  Native, Node.js and the .NET Core framework. Beyond that, i
-                  also have a passion for design with some background in Graphic
-                  Design and Motion Design. Lastly, to whomever is reading this
-                  i hope you have a nice day!
+                <p className="text-justify text-lg md:text-start mt-5 animate-[slideDownFadeIn_0.7s_ease-in-out]">
+                  Welcome! My name is Darren and i am a computer science
+                  student. I&apos;m currently focusing on improving my skills in
+                  web development hence te existence of this website.
+                </p>
+                <p className="text-justify text-lg md:text-start mt-5 animate-[slideDownFadeIn_0.7s_ease-in-out]">
+                  Beyond that, i also have a passion for design with some
+                  background in Graphic Design and Motion Design. Lastly, to
+                  whomever is reading this i hope you have a nice day!
                 </p>
                 <h2 className="pt-5 pb-1 text-center md:text-start animate-[slideDownFadeIn_0.7s_ease-in-out]">
                   Press this button to know more about me!
@@ -80,6 +79,10 @@ export default function About() {
                   <Button
                     variant="contained"
                     size="small"
+                    sx={{
+                      backgroundColor: "var(--accent)",
+                      color: "var(--background)",
+                    }}
                     onClick={scrollToNextSection}
                   >
                     Check it out!

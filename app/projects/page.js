@@ -117,7 +117,7 @@ export default function Projects() {
             type={"Mobile Development (React Native + Express.js)"}
             title={"E-Store App"}
             description={
-              "This section shows a web application built with React Native and Typescript that showcases a simple iteration of a e-commerce marketplace. The application uses Express.js as the backend with MongoDB as the database. It also incorporates JWT for user authentication and Redux for user's cart state management."
+              "This section shows a web application built with React Native and Typescript that showcases a simple iteration of a e-commerce marketplace. The application uses Node.js + Express.js as the backend with MongoDB as the database. It also incorporates JWT for user authentication and Redux for user's cart state management."
             }
           />
           <ExampleWorkVideo

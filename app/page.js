@@ -9,7 +9,7 @@ export default function Home() {
       <Nav />
       <div className="h-screen overflow-y-scroll snap-y snap-mandatory motion-safe:scroll-smooth no-scrollbar">
         <div className="h-screen flex items-center justify-center bg-[#754E1A] snap-start">
-          <h1 className="text-emerald-500 text-center text-3xl md:text-6xl">
+          <h1 className="text-emerald-500 text-center font-bold text-3xl md:text-6xl lg:text-7xl">
             Hello{" "}
             <span className="inline-flex whitespace-nowrap">
               (´• ω •)
@@ -18,7 +18,7 @@ export default function Home() {
           </h1>
         </div>
         <div className="h-screen flex items-center justify-center bg-[#F0A04B] snap-start">
-          <h1 className="text-emerald-500 text-center text-3xl md:text-6xl">
+          <h1 className="text-emerald-500 text-center font-bold text-3xl md:text-6xl lg:text-7xl">
             Welcome to my website!{" "}
             <span className="inline-flex whitespace-nowrap">
               <span className="inline-block animate-jumping-hand">٩</span>(ˊᗜˋ*)
@@ -27,7 +27,7 @@ export default function Home() {
           </h1>
         </div>
         <div className="h-screen flex flex-col items-center justify-center bg-[#FCE7C8] snap-start">
-          <h1 className="text-emerald-500 text-center text-3xl md:text-6xl">
+          <h1 className="text-emerald-500 text-center font-bold text-3xl md:text-6xl lg:text-7xl">
             Thanks for stopping by!{" "}
             <span className="inline-flex whitespace-nowrap">
               <span className="inline-block animate-jumping-hand">ദ്ദി</span>(
@@ -35,7 +35,7 @@ export default function Home() {
             </span>
           </h1>
           <Link className="pt-5" href={"/about"}>
-            <p className="text-lg text-[#B1C29E] hover:text-[#a1c479]">
+            <p className="text-lg text-[#A6794D] hover:text-[#a1c479]">
               You can start from Here!
             </p>
           </Link>

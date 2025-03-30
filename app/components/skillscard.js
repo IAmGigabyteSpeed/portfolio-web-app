@@ -28,7 +28,7 @@ export default function Skillcard({ skills }) {
             className=""
           >
             <Card className="hover:bg-slate-100 hover:shadow-lg transition duration-500 p-1">
-              <CardContent className="flex justify-center items-center min-h-[9rem]">
+              <CardContent className="flex justify-center items-center min-h-[9rem] relative">
                 <img
                   className="w-1/3 h-1/2"
                   alt={skill}

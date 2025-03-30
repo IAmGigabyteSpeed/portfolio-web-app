@@ -184,7 +184,7 @@ export default function About() {
               <EducationalCard
                 title={"Universitas Bina Nusantara"}
                 year={"September 2021 - Present"}
-                grade={"3.42 GPA"}
+                grade={"3.48 GPA"}
                 study={"Computer Science"}
               />
               <div className="h-[150px] border-l-4 border-dashed border-[#B2C1A0]"></div>

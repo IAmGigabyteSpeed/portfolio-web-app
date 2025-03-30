@@ -85,7 +85,7 @@ export default function Projects() {
     <>
       <FollowCursor />
       <Nav />
-      <div className="pt-12 min-h-screen lg:px-20">
+      <div className="pt-12 min-h-screen lg:px-16">
         <section className="min-h-screen px-2 md:px-12 lg:px-24 pt-12">
           <p className="text-3xl text-center md:text-6xl md:text-start font-bold">
             Example Works
@@ -131,7 +131,7 @@ export default function Projects() {
           />
           <ExampleWork
             imgArr={web5data}
-            year={"2024-2025"}
+            year={"2024 - 2025"}
             type={"Website Development (jQuery + .NET Core)"}
             title={"Internship Project"}
             description={
@@ -158,7 +158,7 @@ export default function Projects() {
           />
           <ExampleWork
             imgArr={web8data}
-            year={"2018-2025"}
+            year={"2018 - 2025"}
             type={"Graphic Design"}
             title={"Personal Projects"}
             description={

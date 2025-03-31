@@ -69,7 +69,8 @@ export default function About() {
                     Other than that, i have a passion for design and have
                     expressed my creativty through several outlets such as
                     graphic design, motion design, web design and video editing.
-                    It&apos;s been a fun ride and i don&apos;t plan on stopping!
+                    It&apos;s been a fun ride learning new skills and i
+                    don&apos;t plan on stopping any time soon!
                   </p>
                 </div>
                 <p className="text-justify mt-5 mb-2 animate-[slideDownFadeIn_0.7s_ease-in-out]">

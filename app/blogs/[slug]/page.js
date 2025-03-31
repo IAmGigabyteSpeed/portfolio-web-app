@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams } from "next/navigation";
 import Nav from "@/app/components/nav";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import DangerousIcon from "@mui/icons-material/Dangerous";
 
 const fetchBlog = async (slug) => {
   const res = await fetch(`/api/blogs/${slug}`);
@@ -26,13 +27,18 @@ const Blog = () => {
   return (
     <>
       <Nav />
-      <div className="min-h-screen lg:px-20">
+      <div className="pt-12 min-h-screen">
         {isLoading ? (
-          <p className="text-center w-screen">Loading...</p>
+          <p className="text-center mt-16 flex justify-center items-center text-4xl">
+            Loading Blog Content<span className="showseqdots"></span>
+          </p>
         ) : error ? (
-          <p className="text-cenver w-screen">Error: {error.message}</p>
+          <div className="text-center mt-6">
+            <DangerousIcon className="rotating" sx={{ fontSize: 256 }} />
+            <p className="text-2xl">Error loading Blogs: {error.message}</p>
+          </div>
         ) : (
-          <section className="mx-auto w-11/12 md:w-8/12 pt-20 flex flex-col gap-5">
+          <section className="mx-auto w-11/12 md:w-8/12 pt-20 flex flex-col lg:px-20">
             <div className="flex justify-between font-poppins place-items-center">
               <Link
                 href="/blog"

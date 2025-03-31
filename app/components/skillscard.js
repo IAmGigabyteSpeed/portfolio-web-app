@@ -6,13 +6,13 @@ export default function Skillcard({ skills }) {
   return (
     <Grid
       container
-      spacing={5}
+      spacing={3}
+      paddingX={10}
       justifyContent="center"
       alignItems="center"
-      paddingX={6}
     >
       {skills.map((skill) => (
-        <Grid xs={4} sm={3} md={2} lg={1.5} key={skill}>
+        <Grid size={{ xs: 10, sm: 5, md: 4, lg: 2 }} key={skill}>
           <motion.div
             whileHover={{
               scale: 1.05,
@@ -28,9 +28,9 @@ export default function Skillcard({ skills }) {
             className=""
           >
             <Card className="hover:bg-slate-100 hover:shadow-lg transition duration-500 p-1">
-              <CardContent className="flex justify-center items-center min-h-[9rem] relative">
+              <CardContent className="flex justify-center items-center min-h-[10rem] relative">
                 <img
-                  className="w-1/3 h-1/2"
+                  className="w-2/5 h-3/4"
                   alt={skill}
                   src={`/skills/${skill}.webp`}
                 />

@@ -22,31 +22,31 @@ const Nav = () => {
           <ToggleTheme />
           <Link
             href="/"
-            className="px-4 mx-2 hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
+            className="px-4 mx-2 font-semibold hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="px-4 mx-2 hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
+            className="px-4 mx-2 font-semibold hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
           >
             About
           </Link>
           <Link
             href="/blog"
-            className="px-4 mx-2 hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
+            className="px-4 mx-2 font-semibold hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
           >
             Blogs
           </Link>
           <Link
             href="/projects"
-            className="px-4 mx-2 hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
+            className="px-4 mx-2 font-semibold hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
           >
             Projects
           </Link>
           <Link
             href="/contact"
-            className="px-4 mx-2 hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
+            className="px-4 mx-2 font-semibold hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
           >
             Contact
           </Link>

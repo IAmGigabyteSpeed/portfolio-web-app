@@ -57,7 +57,7 @@ export default function About() {
                 <h1 className="text-7xl mt-5 md:mt-0 text-center md:text-start font-bold animate-[FadeIn_0.7s_ease-in-out]">
                   ABOUT ME
                 </h1>
-                <div className="lg:pe-40">
+                <div className="xl:pe-40">
                   <p className="text-justify mt-5 animate-[slideDownFadeIn_0.7s_ease-in-out]">
                     Welcome! I&apos;m Darren, a computer science student focused
                     on sharpening my web development skills. I have made several

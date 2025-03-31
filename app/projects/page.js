@@ -85,8 +85,8 @@ export default function Projects() {
     <>
       <FollowCursor />
       <Nav />
-      <div className="pt-12 min-h-screen lg:px-16">
-        <section className="min-h-screen px-2 md:px-12 lg:px-24 pt-12">
+      <div className="pt-12 min-h-screen xl:px-16">
+        <section className="min-h-screen px-2 md:px-12 xl:px-24 pt-12">
           <p className="text-3xl text-center md:text-6xl md:text-start font-bold">
             Example Works
           </p>
@@ -142,7 +142,7 @@ export default function Projects() {
             imgArr={web6data}
             year={"2023"}
             type={"Website Development (HTML)"}
-            title={"HealthyTogether"}
+            title={"Healthy Together"}
             description={
               "This section involves a website design for a group university project made in HTML. The website is designed for selling gym memberships and is offering access to workout classes, group sessions, and instructional videos to educate users on exercising. Additionally it also features a marketplace for gym accessories and supplements. "
             }

@@ -5,6 +5,7 @@ import { Card, CardContent } from "@mui/material";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useRef, useEffect, useState } from "react";
 import useDebounce from "@/libs/useDebounce";
+import DangerousIcon from "@mui/icons-material/Dangerous";
 
 const fetchBlogs = async ({ pageParam = 1, search, category }) => {
   const res = await fetch(
@@ -68,8 +69,8 @@ export default function Blogs() {
   return (
     <div>
       <Nav />
-      <div className="pt-12 min-h-screen lg:px-20">
-        <div className="my-4 flex flex-row items-center justify-end me-5 md:mx-20">
+      <div className="pt-12 min-h-screen">
+        <div className="my-4 flex flex-row items-center justify-end me-5 md:mx-20 lg:px-20">
           <input
             type="text"
             placeholder="Search Blogs..."
@@ -89,13 +90,16 @@ export default function Blogs() {
           </select>
         </div>
         {isLoading ? (
-          <p className="text-center w-screen">Loading Blogs...</p>
-        ) : error ? (
-          <p className="text-center w-screen">
-            Error loading Blogs: {error.message}
+          <p className="text-center w-screen text-4xl">
+            Loading Blogs<span className="showseqdots"></span>
           </p>
+        ) : error ? (
+          <div className="text-center w-screen">
+            <DangerousIcon className="rotating" sx={{ fontSize: 256 }} />
+            <p className="text-2xl">Error loading Blogs:</p>
+          </div>
         ) : (
-          <div className="grid grid-cols-1 gap-5 mx-5 md:mx-20 mt-5">
+          <div className="grid grid-cols-1 gap-5 mx-5 md:mx-20 mt-5 lg:px-20">
             {data?.pages.map((page) =>
               page.blogs.map((blog) => (
                 <Card

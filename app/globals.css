@@ -190,3 +190,28 @@ button {
     opacity: 1;
   }
 }
+
+@keyframes showseqdots {
+  0% { content: ""; }
+  25% { content: "."; }
+  50% { content: ".."; }
+  75% { content: "..."; }
+}
+
+.showseqdots::after {
+  content: "";
+  animation: showseqdots 2s infinite steps(1);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  color:#B22222;
+  animation: rotate 8s linear infinite;
+}

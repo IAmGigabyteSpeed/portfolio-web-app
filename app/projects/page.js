@@ -15,6 +15,7 @@ export default function Projects() {
     "project/ForumChat7.png",
     "project/ForumChat8.png",
     "project/ForumChat9.png",
+    "project/ForumChat10.png",
   ];
 
   let web2data = [

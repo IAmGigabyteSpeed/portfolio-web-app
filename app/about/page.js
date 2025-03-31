@@ -204,6 +204,13 @@ export default function About() {
                 grade={"72 WA"}
                 study={"Bilingual Class"}
               />
+              <div className="h-[150px] border-l-4 border-dashed border-[#B2C1A0]"></div>
+              <EducationalCard
+                title={"SD Bunda Mulia"}
+                year={"July 2009 - June 2015"}
+                grade={"70.17 WA"}
+                study={"Bilingual Class"}
+              />
             </motion.div>
           </section>
         </section>

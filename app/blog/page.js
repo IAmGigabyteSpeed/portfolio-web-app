@@ -90,13 +90,13 @@ export default function Blogs() {
           </select>
         </div>
         {isLoading ? (
-          <p className="text-center w-screen text-4xl">
+          <p className="text-center text-4xl">
             Loading Blogs<span className="showseqdots"></span>
           </p>
         ) : error ? (
-          <div className="text-center w-screen">
+          <div className="text-center">
             <DangerousIcon className="rotating" sx={{ fontSize: 256 }} />
-            <p className="text-2xl">Error loading Blogs:</p>
+            <p className="text-2xl">Error loading Blogs: {error.message}</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-5 mx-5 md:mx-20 mt-5 lg:px-20">
@@ -144,7 +144,11 @@ export default function Blogs() {
           ref={observerRef}
           className="h-10 flex justify-center items-center"
         >
-          {isFetchingNextPage && <p>Loading more Blogs...</p>}
+          {isFetchingNextPage && (
+            <p className="text-xl">
+              Loading more Blogs<span className="showseqdots"></span>
+            </p>
+          )}
         </div>
       </div>
     </div>

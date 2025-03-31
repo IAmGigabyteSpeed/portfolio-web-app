@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@mui/material";
 const EducationalCard = ({ title, year, grade, study }) => {
   return (
-    <Card className="w-3/4 md:w-1/2 lg:w-1/4 shadow-md hover:shadow-lg transition-shadow duration-300 rounded-xl">
+    <Card className="w-3/4 md:w-1/2 xl:w-1/4 shadow-md hover:shadow-lg transition-shadow duration-300 rounded-xl">
       <CardContent className="rounded-xl">
         <div className="flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center">
           <div className="md:me-5"></div>

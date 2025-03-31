@@ -8,7 +8,7 @@ import DangerousIcon from "@mui/icons-material/Dangerous";
 
 const fetchBlog = async (slug) => {
   const res = await fetch(`/api/blogs/${slug}`);
-  if (!res.ok) throw new Error("Failed to fetch blog");
+  if (!res.ok) throw new Error("Failed to fetch blog content!");
   return res.json();
 };
 

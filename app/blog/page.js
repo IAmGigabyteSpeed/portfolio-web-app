@@ -11,7 +11,7 @@ const fetchBlogs = async ({ pageParam = 1, search, category }) => {
   const res = await fetch(
     `/api/blog?page=${pageParam}&limit=5&search=${search}&category=${category}`
   );
-  if (!res.ok) throw new Error("Failed to fetch Blogs");
+  if (!res.ok) throw new Error("Failed to fetch blogs!");
   const data = await res.json();
   return data;
 };

@@ -51,7 +51,7 @@ const Carousel = ({ imgSrc }) => {
                     component="img"
                     sx={{
                       width: "100%",
-                      height: { xs: 200, sm: 300, md: 500, lg: 650 }, // Fixed height with responsiveness
+                      height: { xs: 150, sm: 250, md: 400, lg: 550 }, // Fixed height with responsiveness
                       objectFit: "contain",
                     }}
                     image={img}

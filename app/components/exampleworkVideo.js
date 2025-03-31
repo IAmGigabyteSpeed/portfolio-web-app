@@ -50,7 +50,7 @@ const ExampleWorkVideo = ({ videos, year, type, title, description }) => {
                       component="video"
                       sx={{
                         width: "100%",
-                        height: { xs: 200, sm: 300, md: 500, lg: 650 }, // Fixed height with responsiveness
+                        height: { xs: 150, sm: 250, md: 400, lg: 550 }, // Fixed height with responsiveness
                         objectFit: "contain",
                       }}
                       image={video}
@@ -67,17 +67,17 @@ const ExampleWorkVideo = ({ videos, year, type, title, description }) => {
           <ArrowForwardIos />
         </IconButton>
       </Box>
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start md:mx-10 mt-5">
-        <div className="md:w-1/2 flex">
+      <div className="flex flex-col lg:flex-row items-center md:items-start justify-center md:justify-start md:mx-10 mt-5">
+        <div className="lg:w-1/2 flex me-1 gap-x-1">
           <div className="flex flex-col justify-between me-5 md:me-10">
             <p className="">{year}</p>
           </div>
           <div>
             <p className="">{type}</p>
-            <p className="text-xl md:text-4xl lg:text-6xl">{title}</p>
+            <p className="text-xl md:text-4xl xl:text-6xl">{title}</p>
           </div>
         </div>
-        <div className="md:w-1/2 text-justify mt-2 md:mt-0">
+        <div className="lg:w-1/2 text-justify mt-2 md:mt-0">
           <p>{description}</p>
         </div>
       </div>

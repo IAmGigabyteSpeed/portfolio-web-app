@@ -233,9 +233,10 @@ export default function About() {
               Certifications
             </p>
           </section>
-          <section className="mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8 gap-5">
+          <section className="mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
+              whileHover={{ scale: 1.015 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5 }}
@@ -248,6 +249,7 @@ export default function About() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
+              whileHover={{ scale: 1.015 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5 }}
@@ -257,6 +259,7 @@ export default function About() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
+              whileHover={{ scale: 1.015 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5 }}
@@ -269,6 +272,7 @@ export default function About() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
+              whileHover={{ scale: 1.015 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5 }}
@@ -281,6 +285,7 @@ export default function About() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
+              whileHover={{ scale: 1.015 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5 }}
@@ -293,6 +298,7 @@ export default function About() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 50 }}
+              whileHover={{ scale: 1.015 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5 }}

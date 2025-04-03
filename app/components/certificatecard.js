@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@mui/material";
 const Certificatecard = ({ company, title }) => {
   return (
-    <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 rounded-xl">
+    <Card className="shadow-md hover:shadow-xl transition-shadow duration-300 rounded-xl min-h-[27.5rem]">
       <CardContent className="rounded-xl">
         <div className="flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center">
           <div>

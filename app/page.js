@@ -35,8 +35,8 @@ export default function Home() {
             </span>
           </h1>
           <Link className="pt-5" href={"/about"}>
-            <p className="text-lg text-[#A6794D] hover:text-[#a1c479]">
-              You can start from Here!
+            <p className="text-lg text-[#A6794D] cursor-pointer transition-transform transform hover:-translate-y-1 hover:scale-110 hover:text-[#a1c479]">
+              You can start from Here
             </p>
           </Link>
         </div>

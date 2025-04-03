@@ -11,6 +11,7 @@ import AchievementsGrid from "../components/achievementgrid";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import ScrolltoTop from "../components/scrolltoTop";
+import Certificatecard from "../components/certificatecard";
 
 export default function About() {
   const scrollRef = useRef(null);
@@ -225,6 +226,86 @@ export default function About() {
           </section>
           <h2></h2>
         </section>
+
+        <section className="">
+          <section className="px-2 md:px-20 pt-12">
+            <p className="text-3xl text-center md:text-6xl md:text-start font-bold mb-5">
+              Certifications
+            </p>
+          </section>
+          <section className="mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8 gap-5">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center align-center mb-10 gap-5"
+            >
+              <Certificatecard
+                company={"Hackerrank"}
+                title={"Frontend Developer (React)"}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center align-center mb-10 gap-5"
+            >
+              <Certificatecard company={"Hackerrank"} title={"React (Basic)"} />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center align-center mb-10 gap-5"
+            >
+              <Certificatecard
+                company={"Hackerrank"}
+                title={"Javascript (Basic)"}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center align-center mb-10 gap-5"
+            >
+              <Certificatecard
+                company={"Hackerrank"}
+                title={"SQL (Intermediate)"}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center align-center mb-10 gap-5"
+            >
+              <Certificatecard
+                company={"Dicoding"}
+                title={"Belajar Membuat Aplikasi Web dengan React"}
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center align-center mb-10 gap-5"
+            >
+              <Certificatecard
+                company={"Dicoding"}
+                title={"Belajar Back-End Pemula dengan Javascript"}
+              />
+            </motion.div>
+          </section>
+        </section>
+
         <section className="">
           <section className="px-2 md:px-20 pt-12">
             <p className="text-3xl text-center md:text-6xl md:text-start font-bold mb-5">

@@ -233,7 +233,7 @@ export default function About() {
               Certifications
             </p>
           </section>
-          <section className="mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8">
+          <section className="mb-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-8 md:gap-2 xl:gap-0">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileHover={{ scale: 1.015 }}

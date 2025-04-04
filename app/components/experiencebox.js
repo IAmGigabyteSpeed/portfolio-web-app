@@ -7,7 +7,7 @@ const ExperienceBox = ({ title, year, position, jobdescription }) => {
           <div className="md:me-5"></div>
           <div>
             <div className="">
-              <h2 className="text-lg text-center md:text-start font-semibold text-emerald-500">
+              <h2 className="text-lg text-center md:text-start font-semibold text-[#7D9A5A]">
                 {title}
               </h2>
               <p className="text-gray-500 text-sm text-center md:text-start">

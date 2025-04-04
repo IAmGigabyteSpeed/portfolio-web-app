@@ -11,7 +11,7 @@ const Certificatecard = ({ company, title }) => {
               src={`/certificates/${title}.png`}
             />
             <div className="">
-              <h2 className="text-lg text-center md:text-start font-semibold text-emerald-500">
+              <h2 className="text-lg text-center md:text-start font-semibold text-[#7D9A5A]">
                 {company}
               </h2>
               <p className="text-gray-500 text-sm text-center md:text-start">

@@ -6,6 +6,7 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 import { useRef, useEffect, useState } from "react";
 import useDebounce from "@/libs/useDebounce";
 import DangerousIcon from "@mui/icons-material/Dangerous";
+import Footer from "../components/footer";
 
 const fetchBlogs = async ({ pageParam = 1, search, category }) => {
   const res = await fetch(
@@ -69,7 +70,7 @@ export default function Blogs() {
   return (
     <div>
       <Nav />
-      <div className="pt-12 min-h-screen">
+      <div className="pt-12 min-h-screen flex flex-col justify-between">
         <div className="my-4 flex flex-row items-center justify-end me-5 md:mx-20 lg:px-20">
           <input
             type="text"
@@ -150,6 +151,7 @@ export default function Blogs() {
             </p>
           )}
         </div>
+        <Footer />
       </div>
     </div>
   );

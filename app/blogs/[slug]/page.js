@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import Nav from "@/app/components/nav";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import DangerousIcon from "@mui/icons-material/Dangerous";
+import Footer from "@/app/components/footer";
 
 const fetchBlog = async (slug) => {
   const res = await fetch(`/api/blogs/${slug}`);
@@ -27,7 +28,7 @@ const Blog = () => {
   return (
     <>
       <Nav />
-      <div className="pt-12 min-h-screen">
+      <div className="pt-12 min-h-screen flex flex-col justify-between">
         {isLoading ? (
           <p className="text-center mt-16 flex justify-center items-center text-4xl">
             Loading Blog Content<span className="showseqdots"></span>
@@ -54,6 +55,7 @@ const Blog = () => {
             ></article>
           </section>
         )}
+        <Footer />
       </div>
     </>
   );

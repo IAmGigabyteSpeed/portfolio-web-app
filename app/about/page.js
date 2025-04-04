@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import ScrolltoTop from "../components/scrolltoTop";
 import Certificatecard from "../components/certificatecard";
+import Footer from "../components/footer";
 
 export default function About() {
   const scrollRef = useRef(null);
@@ -348,6 +349,7 @@ export default function About() {
           </p>
         </section>
       </div>
+      <Footer />
     </>
   );
 }

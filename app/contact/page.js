@@ -7,13 +7,14 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import FollowCursor from "../components/cursor";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+import Footer from "../components/footer";
 
 const Contact = () => {
   return (
     <>
       <FollowCursor />
       <Nav />
-      <div className="pt-12 min-h-screen">
+      <div className="pt-12 min-h-screen flex flex-col justify-between">
         <div className="w-full flex flex-col items-center justify-center">
           <h1 className="text-2xl md:text-3xl lg:text-5xl my-10 font-bold">
             Let&apos;s Connect!
@@ -69,6 +70,7 @@ const Contact = () => {
             </Link>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

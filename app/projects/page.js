@@ -4,6 +4,7 @@ import Nav from "../components/nav";
 import ExampleWork from "../components/examplework";
 import ExampleWorkVideo from "../components/exampleworkVideo";
 import FollowCursor from "../components/cursor";
+import Footer from "../components/footer";
 export default function Projects() {
   let web1data = [
     "project/ForumChat1.png",
@@ -86,7 +87,7 @@ export default function Projects() {
     <>
       <FollowCursor />
       <Nav />
-      <div className="pt-12 min-h-screen xl:px-16">
+      <div className="pt-12 min-h-screen xl:px-16 flex flex-col justify-between">
         <section className="min-h-screen px-2 md:px-12 xl:px-24 pt-12">
           <p className="text-3xl text-center md:text-6xl md:text-start font-bold">
             Example Works
@@ -183,6 +184,7 @@ export default function Projects() {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 }

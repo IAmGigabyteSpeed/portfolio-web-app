@@ -21,7 +21,7 @@ const Sidebar = ({ SidebarState, SidebarMech }) => {
             animate={{ x: 0 }}
             exit={{ x: -256 }}
             transition={{ type: "tween", duration: 0.5 }}
-            className="fixed flex-col bg-[#8C7851] w-full md:w-64 min-h-screen z-30 shadow-lg"
+            className="fixed flex-col bg-[#B1C29E] w-full md:w-64 min-h-screen z-30 shadow-lg"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-end justify-end pe-2 pt-5">
@@ -33,31 +33,31 @@ const Sidebar = ({ SidebarState, SidebarMech }) => {
             <div className="flex flex-col space-y-2 mt-5">
               <Link
                 href="/"
-                className="p-4 transition delay-100 duration-300 ease-in-out text-[#FCE7C8] hover:bg-[#37240D]"
+                className="p-4 transition-all font-medium duration-300 ease-in-out hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105 rounded-lg"
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="p-4 transition delay-100 duration-300 ease-in-out text-[#FCE7C8] hover:bg-[#37240D]"
+                className="p-4 transition-all font-medium duration-300 ease-in-out hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105 rounded-lg"
               >
                 About
               </Link>
               <Link
                 href="/blog"
-                className="p-4 transition delay-100 duration-300 ease-in-out text-[#FCE7C8] hover:bg-[#37240D]"
+                className="p-4 transition-all font-medium duration-300 ease-in-out hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105 rounded-lg"
               >
                 Blogs
               </Link>
               <Link
                 href="/projects"
-                className="p-4 transition delay-100 duration-300 ease-in-out text-[#FCE7C8] hover:bg-[#37240D]"
+                className="p-4 transition-all font-medium duration-300 ease-in-out hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105 rounded-lg"
               >
                 Projects
               </Link>
               <Link
                 href="/contact"
-                className="p-4 transition delay-100 duration-300 ease-in-out text-[#FCE7C8] hover:bg-[#37240D]"
+                className="p-4 transition-all font-medium duration-300 ease-in-out hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105 rounded-lg"
               >
                 Contact
               </Link>

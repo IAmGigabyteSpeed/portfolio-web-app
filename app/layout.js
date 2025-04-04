@@ -1,9 +1,20 @@
-import { Montserrat } from "next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import QueryProvider from "@/app/components/queryprovider";
 import ReduxProvider from "./components/reduxprovider";
 
-const montserrat = Montserrat({ subsets: ["latin"], weight: ["500", "700"] });
+// Define font styles
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-heading",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-body",
+});
 
 export const metadata = {
   title: `Darren Tangamus Portfolio`,
@@ -13,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${montserrat.variable} ${poppins.variable}`}>
         <ReduxProvider>
           <QueryProvider>{children}</QueryProvider>
         </ReduxProvider>

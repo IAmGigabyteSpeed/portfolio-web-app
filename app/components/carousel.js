@@ -26,7 +26,7 @@ const Carousel = ({ imgSrc }) => {
       }}
     >
       <IconButton onClick={handlePrev} sx={{ me: 1 }}>
-        <ArrowBackIos />
+        <ArrowBackIos style={{ color: "var(--foreground)" }} />
       </IconButton>
 
       <Grid2 container spacing={2} sx={{ width: "100%", display: "flex" }}>
@@ -64,7 +64,7 @@ const Carousel = ({ imgSrc }) => {
       </Grid2>
 
       <IconButton onClick={handleNext} sx={{ ms: 1 }}>
-        <ArrowForwardIos />
+        <ArrowForwardIos style={{ color: "var(--foreground)" }} />
       </IconButton>
     </Box>
   );

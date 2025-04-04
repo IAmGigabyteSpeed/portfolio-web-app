@@ -22,31 +22,31 @@ const Nav = () => {
           <ToggleTheme />
           <Link
             href="/"
-            className="px-4 mx-2 font-semibold hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
+            className="px-4 mx-2 h-full font-medium hidden md:flex items-center justify-center text-center transition-all duration-300 hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="px-4 mx-2 font-semibold hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
+            className="px-4 mx-2 h-full font-medium hidden md:flex items-center justify-center text-center transition-all duration-300 hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105"
           >
             About
           </Link>
           <Link
             href="/blog"
-            className="px-4 mx-2 font-semibold hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
+            className="px-4 mx-2 h-full font-medium hidden md:flex items-center justify-center text-center transition-all duration-300 hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105"
           >
             Blogs
           </Link>
           <Link
             href="/projects"
-            className="px-4 mx-2 font-semibold hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
+            className="px-4 mx-2 h-full font-medium hidden md:flex items-center justify-center text-center transition-all duration-300 hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105"
           >
             Projects
           </Link>
           <Link
             href="/contact"
-            className="px-4 mx-2 font-semibold hover:bg-gray-300 h-full hidden md:flex items-center justify-center text-center"
+            className="px-4 mx-2 h-full font-medium hidden md:flex items-center justify-center text-center transition-all duration-300 hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105"
           >
             Contact
           </Link>

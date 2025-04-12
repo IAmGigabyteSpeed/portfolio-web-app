@@ -10,7 +10,7 @@ const ExampleWork = ({ imgArr, year, type, title, description, skills }) => {
           </div>
           <div>
             <p className="">{type}</p>
-            <p className="text-xl md:text-4xl xl:text-6xl">{title}</p>
+            <p className="text-xl md:text-4xl xl:text-6xl font-bold">{title}</p>
           </div>
         </div>
         <div className="lg:w-1/2 text-justify mt-2 md:mt-0">

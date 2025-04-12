@@ -98,65 +98,78 @@ export default function Projects() {
           <ExampleWork
             imgArr={web1data}
             year={2025}
-            type={"Website Development (Next.js + .NET Core)"}
+            type={"Web Development"}
             title={"Forum Chat App"}
             description={
-              "This section shows a full stack web application that provides a forum website for people to have discussions of any topic they want.The website is created using Next.js as the front-end, .Net Core 8 as the backend and MS SQL as the database. It also incorporates JWT for user authentication, Redux for user state management and React Query for pagination, search, and filtering."
+              "A full stack forum web application designed for open-topic discussions, featuring user authentication and state management with Redux. The frontend is built using Next.js, utilizing React Query for data handling, while the backend is powered by .NET Core 8 with MS SQL as the database."
             }
+            skills={["Next.js", "React Query", "Redux", ".NET Core", "MS SQL"]}
           />
           <ExampleWork
             imgArr={web2data}
             year={2025}
-            type={"Website Development (Next.js + Jikan API)"}
+            type={"Web Development"}
             title={"Anime Search"}
             description={
-              "This section includes a web application created using Next.js and provides information regarding animes from MyAnimeList. This website uses Jikan API for its data and also incorporated Pagination, Search and Filtering using React Query."
+              "A web application built with Next.js that displays anime information sourced from MyAnimeList using the Jikan API. It features search, filtering, and pagination powered by React Query."
             }
+            skills={["Next.js", "React Query", "Jikan API"]}
           />
           <ExampleWork
             imgArr={web3data}
             year={2025}
-            type={"Mobile Development (React Native + Express.js)"}
+            type={"Mobile Development"}
             title={"E-Store App"}
             description={
-              "This section shows a web application built with React Native and Typescript that showcases a simple iteration of a e-commerce marketplace. The application uses Node.js + Express.js as the backend with MongoDB as the database. It also incorporates JWT for user authentication and Redux for user's cart state management."
+              "A mobile e-commerce marketplace application developed using React Native and TypeScript featuring Redux for the cart management. The backend is built with Express.js and uses MongoDB as the database."
             }
+            skills={[
+              "React Native",
+              "Typescript",
+              "Redux",
+              "Express.js",
+              "MongoDB",
+            ]}
           />
           <ExampleWorkVideo
             videos={web4data}
             year={2025}
-            type={"Website Development (jQuery + Gemini API)"}
+            type={"Web Development"}
             title={"AI Chatbot App"}
             description={
-              "This sections involves a web application built with jQuery and features a chatbot powered by Gemini AI API. The chatbot is based on the fan name of Hololive's former Vtuber Ceres Fauna. It also utilizes Live2D.js to display an interactive model of the character."
+              "A chatbot web application built with jQuery, featuring a chatbot powered by the Gemini AI API. The chatbot is inspired by Hololive's former Vtuber Ceres Fauna and includes an interactive character model displayed using Live2D.js."
             }
+            skills={["HTML", "jQuery", "Live2D.js", "Gemini AI"]}
           />
           <ExampleWork
             imgArr={web5data}
             year={"2024 - 2025"}
-            type={"Website Development (jQuery + .NET Core)"}
+            type={"Web Development"}
             title={"Internship Project"}
             description={
-              "This section includes web application projects i've done during my internship at PT.Bintang Toedjoe and includes several project i've done. All of the web applications was made using jQuery as the front-end, .Net Core 6 as the back-end and MS SQL as the database."
+              "A showcase of several internal web application projects developed during my internship at PT. Bintang Toedjoe. All applications were built using jQuery for the frontend, .NET Core 6 for the backend, and MS SQL as the database."
             }
+            skills={["HTML", "Bootstrap", "jQuery", ".NET Core"]}
           />
           <ExampleWork
             imgArr={web6data}
             year={"2023"}
-            type={"Website Development (HTML)"}
+            type={"Website Development"}
             title={"Healthy Together"}
             description={
-              "This section involves a website design for a group university project made in HTML. The website is designed for selling gym memberships and is offering access to workout classes, group sessions, and instructional videos to educate users on exercising. Additionally it also features a marketplace for gym accessories and supplements. "
+              "A website designed to sell gym memberships, offering access to workout classes, group sessions, instructional videos, and a marketplace for gym accessories and supplements. This was created for a university group project, built with HTML and Bootstrap."
             }
+            skills={["HTML", "Bootstrap", "Javascript"]}
           />
           <ExampleWork
             imgArr={web7data}
             year={"2024"}
-            type={"Website Mockup Design (Figma)"}
+            type={"Website Mockup"}
             title={"AssetKu"}
             description={
-              "This section involves a website design for a group university project that's made in Figma. It involves a website that focuses on providing an e-commerce marketplace for 3D model and asset creators to start selling their projects and services."
+              "A website mockup designed to provide an e-commerce marketplace that enables 3D model and asset creators to showcase and sell their projects and services to enthusiasts. This was created for a university group project using Figma."
             }
+            skills={["Figma"]}
           />
           <ExampleWork
             imgArr={web8data}
@@ -164,8 +177,9 @@ export default function Projects() {
             type={"Graphic Design"}
             title={"Personal Projects"}
             description={
-              "This sections includes several graphic designs that i've done personally. Some of them includes several poster competitions i've participated in, high school projects and personal projects. Most of them were made using tools such as Photoshop and Canva."
+              "Several graphic designs that i've done personally which includes several graphic design poster competitions, high school projects and personal passion projects. Most were made using graphic design softwares such as Photoshop and Canva."
             }
+            skills={["Photoshop", "Canva"]}
           />
 
           <div className="pb-5 mt-20 flex justify-center items-center">

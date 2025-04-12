@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import { Box, Card, CardMedia, Grid2, IconButton } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 import { motion } from "framer-motion";
-const ExampleWorkVideo = ({ videos, year, type, title, description }) => {
+const ExampleWorkVideo = ({
+  videos,
+  year,
+  type,
+  title,
+  description,
+  skills,
+}) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const itemsPerSlide = 1;
   const totalSlides = Math.ceil(videos.length / itemsPerSlide);
@@ -78,7 +85,19 @@ const ExampleWorkVideo = ({ videos, year, type, title, description }) => {
           </div>
         </div>
         <div className="lg:w-1/2 text-justify mt-2 md:mt-0">
-          <p>{description}</p>
+          <div>
+            <p>{description}</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-2 mt-2">
+            {skills.map((skill) => (
+              <p
+                className="font-semibold bg-[var(--accent)] text-[var(--background)] text-center rounded-full py-2 px-3"
+                key={skill}
+              >
+                {skill}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </div>

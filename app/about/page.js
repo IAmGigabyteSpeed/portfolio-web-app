@@ -268,7 +268,7 @@ export default function About() {
             >
               <Certificatecard
                 company={"Hackerrank"}
-                title={"Javascript (Basic)"}
+                title={"SQL (Intermediate)"}
               />
             </motion.div>
             <motion.div

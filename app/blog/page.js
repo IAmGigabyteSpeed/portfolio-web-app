@@ -70,19 +70,19 @@ export default function Blogs() {
   return (
     <div>
       <Nav />
-      <div className="pt-12 min-h-screen flex flex-col justify-between">
+      <div className="pt-12 min-h-screen">
         <div className="my-4 flex flex-row items-center justify-end me-5 md:mx-20 lg:px-20">
           <input
             type="text"
             placeholder="Search Blogs..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="p-2 w-1/4 border rounded text-black"
+            className="p-2 w-1/2 lg:w-1/4 border rounded text-black"
           />
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className="p-2 border rounded ml-2 text-black"
+            className="p-2 border rounded ml-2 w-1/4 text-black"
           >
             <option>All</option>
             {categories.map((category) => (
@@ -100,7 +100,7 @@ export default function Blogs() {
             <p className="text-2xl">Error loading Blogs: {error.message}</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 gap-5 mx-5 md:mx-20 mt-5 lg:px-20">
+          <div className="grid grid-cols-1 gap-5 mx-5 md:mx-20 mt-2 lg:px-20">
             {data?.pages.map((page) =>
               page.blogs.map((blog) => (
                 <Card
@@ -108,32 +108,50 @@ export default function Blogs() {
                   key={blog.id}
                 >
                   <CardContent className="rounded-xl">
-                    <Link href={`/blogs/${blog.id}`} passHref>
-                      <div className="flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center">
-                        <div className="md:me-5">
+                    <div className="flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center">
+                      <div className="md:me-5">
+                        <Link
+                          className="cursor-pointer"
+                          href={`/blogs/${blog.id}`}
+                          passHref
+                        >
                           <img
                             alt="Cover Image"
                             src={blog.cover || "/default-cover.jpg"}
                             className="rounded w-[250px] h-[225px] min-w-[250px] min-h-[225px] object-cover"
                           />
-                        </div>
+                        </Link>
+                      </div>
+                      <div>
                         <div>
-                          <div className="cursor-pointer">
-                            <h2 className="text-lg font-semibold text-blue-500 hover:underline">
+                          <div className="flex flex-row">
+                            <h2
+                              className="min-w-20 text-center font-semibold cursor-pointer bg-[var(--accent)] text-[var(--background)] rounded-full py-1 px-2 hover:underline"
+                              onClick={() => setCategory(blog.category)}
+                            >
+                              {blog.category}
+                            </h2>
+                          </div>
+                          <Link
+                            className="cursor-pointer"
+                            href={`/blogs/${blog.id}`}
+                            passHref
+                          >
+                            <h2 className="text-2xl font-semibold text-[var(--accent)] hover:underline">
                               {blog.title}
                             </h2>
-                            <p className="text-gray-500 text-sm text-center md:text-start">
-                              {blog.date}
-                            </p>
-                          </div>
-                          <div>
-                            <p className="text-gray-500 text-sm text-center md:text-start">
-                              {blog.summary}
-                            </p>
-                          </div>
+                          </Link>
+                          <p className="text-gray-500 text-md text-center md:text-start">
+                            {blog.date}
+                          </p>
+                        </div>
+                        <div>
+                          <p className="text-gray-500 text-sm text-center md:text-start">
+                            {blog.summary}
+                          </p>
                         </div>
                       </div>
-                    </Link>
+                    </div>
                   </CardContent>
                 </Card>
               ))
@@ -151,8 +169,8 @@ export default function Blogs() {
             </p>
           )}
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -41,10 +41,7 @@ const Blog = () => {
         ) : (
           <section className="mx-auto w-11/12 md:w-8/12 pt-20 flex flex-col lg:px-20">
             <div className="flex justify-between font-poppins place-items-center">
-              <Link
-                href="/blog"
-                className="text-[#CBA35C] hover:text-[#927542]"
-              >
+              <Link href="/blog">
                 <ArrowBackIosIcon sx={{ cursor: "pointer" }} />
               </Link>
               <p className="">{blog.date.toString()}</p>

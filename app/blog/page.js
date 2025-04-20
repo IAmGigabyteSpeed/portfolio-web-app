@@ -124,7 +124,7 @@ export default function Blogs() {
                       </div>
                       <div>
                         <div>
-                          <div className="flex flex-row">
+                          <div className="flex flex-row md:justify-start justify-center mt-2 md:mt-0">
                             <h2
                               className="min-w-20 text-center font-semibold cursor-pointer bg-[var(--accent)] text-[var(--background)] rounded-full py-1 px-2 hover:underline"
                               onClick={() => setCategory(blog.category)}
@@ -137,7 +137,7 @@ export default function Blogs() {
                             href={`/blogs/${blog.id}`}
                             passHref
                           >
-                            <h2 className="text-2xl font-semibold text-[var(--accent)] hover:underline">
+                            <h2 className="text-2xl font-semibold text-[var(--accent)] hover:underline md:text-start text-center">
                               {blog.title}
                             </h2>
                           </Link>

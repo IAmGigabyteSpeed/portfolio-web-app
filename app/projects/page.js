@@ -5,6 +5,9 @@ import ExampleWork from "../components/examplework";
 import ExampleWorkVideo from "../components/exampleworkVideo";
 import FollowCursor from "../components/cursor";
 import Footer from "../components/footer";
+import ScrollToTop from "../components/scrolltoTop";
+import { useRef } from "react";
+
 export default function Projects() {
   let web1data = [
     "project/ForumChat1.png",
@@ -83,12 +86,22 @@ export default function Projects() {
     "project/Personal5.png",
     "project/Personal6.jpg",
   ];
+
+  const topRef = useRef(null);
+  const scrollToNextSection = () => {
+    scrollRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <FollowCursor />
       <Nav />
       <div className="pt-12 min-h-screen xl:px-16 flex flex-col justify-between">
-        <section className="min-h-screen px-2 md:px-12 xl:px-24 pt-12">
+        <ScrollToTop topRef={topRef} />
+        <section
+          ref={topRef}
+          className="min-h-screen px-2 md:px-12 xl:px-24 pt-12"
+        >
           <p className="text-3xl text-center md:text-6xl md:text-start font-bold">
             Example Works
           </p>

@@ -280,8 +280,8 @@ export default function About() {
               className="flex flex-col items-center align-center mb-10 gap-5"
             >
               <Certificatecard
-                company={"Hackerrank"}
-                title={"SQL (Intermediate)"}
+                company={"freeCodeCamp"}
+                title={"Foundational C Sharp with Microsoft"}
               />
             </motion.div>
             <motion.div

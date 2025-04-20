@@ -6,7 +6,7 @@ const Certificatecard = ({ company, title }) => {
         <div className="flex md:flex-row flex-col md:items-start items-center md:justify-start justify-center">
           <div>
             <img
-              className="w-[27.5rem] h-[20rem] shadow-lg mb-2 hover:shadow-xl"
+              className="w-[30rem] h-[20rem] shadow-lg mb-2 hover:shadow-xl"
               alt={"certificate"}
               src={`/certificates/${title}.png`}
             />

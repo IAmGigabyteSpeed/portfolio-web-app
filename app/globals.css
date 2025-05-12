@@ -165,6 +165,11 @@ button {
   animation: updownjump 1s infinite ease-in-out;
 }
 
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
+
 @keyframes FadeIn {
   from {
     opacity: 0;

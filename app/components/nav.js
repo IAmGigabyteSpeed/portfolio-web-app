@@ -27,12 +27,6 @@ const Nav = () => {
             Home
           </Link>
           <Link
-            href="/about"
-            className="px-4 mx-2 h-full font-medium hidden md:flex items-center justify-center text-center transition-all duration-300 hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105"
-          >
-            About
-          </Link>
-          <Link
             href="/blog"
             className="px-4 mx-2 h-full font-medium hidden md:flex items-center justify-center text-center transition-all duration-300 hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105"
           >

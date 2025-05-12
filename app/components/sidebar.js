@@ -38,12 +38,6 @@ const Sidebar = ({ SidebarState, SidebarMech }) => {
                 Home
               </Link>
               <Link
-                href="/about"
-                className="p-4 transition-all font-medium duration-300 ease-in-out hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105 rounded-lg"
-              >
-                About
-              </Link>
-              <Link
                 href="/blog"
                 className="p-4 transition-all font-medium duration-300 ease-in-out hover:bg-[var(--accent)] hover:text-[var(--background)] hover:scale-105 rounded-lg"
               >
